@@ -25,3 +25,10 @@ body {
     text-wrap: balance;
   }
 }
+
+.top-bar{
+  background-color: #ffcc00;
+  color: #000;
+  text-align: center;
+  
+}
