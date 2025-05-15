@@ -30,7 +30,7 @@ export default function HeroSlider() {
 
                     {/* First Image */}
                     <div className="carousel-item active">
-                        <Image src="/images/bg1.jpg " alt="Los Angeles" width={500} height={500} className="d-block w-100 " />
+                        <Image src="/images/bg1.jpg " alt="slider" width={500} height={500} className="d-block w-100 " />
                     </div>
 
                     {/*  Second Image */}
@@ -60,7 +60,7 @@ export default function HeroSlider() {
                     {/* Four Image */}
                     <div className="carousel-item">
                          <div className="relative">
-                            <Image src="/images/bg4.jpg " alt="Los Angeles" width={500} height={500} className="d-block w-100"/>
+                            <Image src="/images/bg4.jpg " alt="slider" width={500} height={500} className="d-block w-100"/>
 
                             <div className="absolute inset-0 bg-black/50 "></div>
                             <div className="absolute inset-0 flex justify-center items-center">
