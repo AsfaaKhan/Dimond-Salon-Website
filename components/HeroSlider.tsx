@@ -36,11 +36,11 @@ export default function HeroSlider() {
                     {/*  Second Image */}
                     <div className="carousel-item">
                         <div className="relative">
-                            <Image src="/images/bg2.jpg " alt="Los Angeles" width={500} height={500} className="d-block w-100"/>
+                            <Image src="/images/bg2.jpg " alt="Slider" width={500} height={500} className="d-block w-100"/>
 
                             <div className="absolute inset-0 bg-black/50 "></div>
                             <div className="absolute inset-0 flex justify-center items-center">
-                                <Link href="/bookingPage"  className={`text-4xl font-bold text-white italic ${Font.className}` }> Book Now</Link>
+                                <Link href="/bookingPage"  className={` text-2xl sm:text-4xl font-bold text-white italic ${Font.className}` }> Book Now</Link>
                             </div>
                         </div>
                     </div>
@@ -48,11 +48,11 @@ export default function HeroSlider() {
                     {/* Third Image */}
                     <div className="carousel-item">
                         <div className="relative">
-                            <Image src="/images/bg3.jpg " alt="Los Angeles" width={500} height={500} className="d-block w-100"/>
+                            <Image src="/images/bg3.jpg " alt="Slider" width={500} height={500} className="d-block w-100"/>
 
                             <div className="absolute inset-0 bg-black/50 "></div>
                             <div className="absolute inset-0 flex justify-center items-center">
-                                <Link href="/bookingPage"  className={`text-4xl font-bold text-white italic ${Font.className}` }>Book Now</Link>
+                                <Link href="/bookingPage"  className={`text-2xl sm:text-4xl font-bold text-white italic ${Font.className}` }>Book Now</Link>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ export default function HeroSlider() {
 
                             <div className="absolute inset-0 bg-black/50 "></div>
                             <div className="absolute inset-0 flex justify-center items-center">
-                                <Link href="/bookingPage"  className={`text-4xl font-bold text-white italic ${Font.className}` }>Book Now</Link>
+                                <Link href="/bookingPage"  className={` text-2xl sm:text-4xl font-bold text-white italic ${Font.className}` }>Book Now</Link>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ export default function HeroSlider() {
 
                            <div className="absolute inset-0 bg-black/50 "></div>
                             <div className="absolute inset-0 flex justify-center items-center">
-                                <Link href="/bookingPage"  className={`text-4xl font-bold text-white italic ${Font.className}` }>Book Now</Link>
+                                <Link href="/bookingPage"  className={`text-2xl sm:text-4xl font-bold text-white italic ${Font.className}` }>Book Now</Link>
                             </div>
                         </div>
                     </div>
