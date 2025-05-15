@@ -1,7 +1,7 @@
 
 import { NextResponse } from 'next/server';
 import { hash } from 'bcrypt';
-import { users } from '@/app/api/auth/[...nextauth]/route'; 
+import {users} from "@/lib/authOptions" 
 
 export async function POST(req: Request) {
   const { name, email, password } = await req.json();
