@@ -9,7 +9,7 @@ const users = [
     id: "1",
     name: "Jane Doe",
     email: "asfaa@gmail.com",
-    password: "password123" // hashed: "password123"
+    password: "password123"
   },
 ];
 
@@ -22,6 +22,9 @@ export const authOptions = {
         password: {}
       },
       async authorize(credentials) {
+        if (!credentials || !credentials.email || !credentials.password) {
+          return null;
+        }
         const user = users.find(u => u.email === credentials?.email);
         if (user && await compare(credentials.password, user.password)) {
           return user;
