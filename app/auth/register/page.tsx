@@ -32,7 +32,7 @@ export default function RegisterPage() {
       return;
     }
 
-    // Auto-login after register
+
     const result = await signIn("credentials", {
       email,
       password,
