@@ -12,7 +12,8 @@ const Font = Niconne({
 
 export default function HeroSlider() {
     return (
-        <div className=" mt-10  w-2/4  h-2/5 mx-auto  ">
+        <div className=" mt-10 p-20 w-2/4  h-2/5 mx-auto flex justify-center items-center  ">
+
             <div id="demo" className="carousel slide " data-bs-ride="carousel">
 
                 {/*  Indicators/dots  */}
@@ -30,13 +31,13 @@ export default function HeroSlider() {
 
                     {/* First Image */}
                     <div className="carousel-item active">
-                        <Image src="/images/bg1.jpg " alt="slider" width={500} height={500} className="d-block w-100 " />
+                        <Image src={"/images/bg1.jpg "} alt="slider" width={500} height={500} className="d-block w-100 " />
                     </div>
 
                     {/*  Second Image */}
                     <div className="carousel-item">
                         <div className="relative">
-                            <Image src="/images/bg2.jpg " alt="Slider" width={500} height={500} className="d-block w-100"/>
+                            <Image src={"/images/bg2.jpg "} alt="Slider" width={500} height={500} className="d-block w-100"/>
 
                             <div className="absolute inset-0 bg-black/50 "></div>
                             <div className="absolute inset-0 flex justify-center items-center">
@@ -48,7 +49,7 @@ export default function HeroSlider() {
                     {/* Third Image */}
                     <div className="carousel-item">
                         <div className="relative">
-                            <Image src="/images/bg3.jpg " alt="Slider" width={500} height={500} className="d-block w-100"/>
+                            <Image src={"/images/bg3.jpg "} alt="Slider" width={500} height={500} className="d-block w-100"/>
 
                             <div className="absolute inset-0 bg-black/50 "></div>
                             <div className="absolute inset-0 flex justify-center items-center">
@@ -60,7 +61,7 @@ export default function HeroSlider() {
                     {/* Four Image */}
                     <div className="carousel-item">
                          <div className="relative">
-                            <Image src="/images/bg4.jpg " alt="slider" width={500} height={500} className="d-block w-100"/>
+                            <Image src={"/images/bg4.jpg "} alt="slider" width={500} height={500} className="d-block w-100"/>
 
                             <div className="absolute inset-0 bg-black/50 "></div>
                             <div className="absolute inset-0 flex justify-center items-center">
@@ -72,7 +73,7 @@ export default function HeroSlider() {
                     {/* Fifth Image */}
                     <div className="carousel-item">
                         <div className="relative">
-                            <Image src="/images/bg5.jpg " alt="Los Angeles" width={500} height={500} className="d-block w-100"/>
+                            <Image src={"/images/bg5.jpg " }alt="Los Angeles" width={500} height={500} className="d-block w-100"/>
 
                            <div className="absolute inset-0 bg-black/50 "></div>
                             <div className="absolute inset-0 flex justify-center items-center">
@@ -91,6 +92,8 @@ export default function HeroSlider() {
                 </button>
 
             </div>
+
+
         </div>
     )
 }
