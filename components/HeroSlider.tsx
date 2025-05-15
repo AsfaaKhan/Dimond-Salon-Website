@@ -12,7 +12,7 @@ const Font = Niconne({
 
 export default function HeroSlider() {
     return (
-        <div className=" mt-10 p-20 w-2/4  h-2/5 mx-auto flex justify-center items-center  ">
+        <div className="w-2/3 mt-10 h-2/3 mx-auto ">
 
             <div id="demo" className="carousel slide " data-bs-ride="carousel">
 

@@ -15,6 +15,7 @@ import Image from "next/image"
 export default function About() {
   return (
     <div className="mt-10">
+ 
 
       {/* Background Image */}
       <div className="relative bg-[url('/images/bg.jpg')] bg-cover bg-no-repeat bg-center  h-[400px]  md:h-[500px]  lg:h-[80vh]  mx-auto p-20 sm:p-10 md:p-20 flex justify-center items-center ">
