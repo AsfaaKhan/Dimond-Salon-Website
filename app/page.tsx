@@ -1,20 +1,16 @@
+"use client"
 import HeroSlider from "@/components/HeroSlider"
+import Gallery from "@/components/Gallery"
 
 export default function Home() {
   return (
     <div>
-      
-      {/* Header */}
+
       <div>
-        <HeroSlider/>
+        <HeroSlider />
+       <Gallery />
       </div>
-
-      <h1 className="font-extrabold text-3xl flex h-screen justify-center items-center "
-      >
-
-        Home Page
-      </h1>
-      
     </div>
   )
 }
+

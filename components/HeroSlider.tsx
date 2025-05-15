@@ -1,21 +1,21 @@
 
 import * as React from "react"
 import Image from "next/image";
-// import Link from "next/link";
-// import { Inter } from "next/font/google"
+import Link from "next/link";
+import { Niconne } from "next/font/google"
 
-// const Font = Inter({
-//     subsets: ['latin'],
-//     weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
-// })
+const Font = Niconne({
+    subsets: ['latin'],
+    weight: ["400"]
+})
 
 
 export default function HeroSlider() {
     return (
-        <div className="  w-2/3 h-2/5 mx-auto ">
+        <div className=" mt-10  w-2/4  h-2/5 mx-auto  ">
             <div id="demo" className="carousel slide " data-bs-ride="carousel">
 
-                {/* <!-- Indicators/dots --> */}
+                {/*  Indicators/dots  */}
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>
                     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
@@ -24,28 +24,61 @@ export default function HeroSlider() {
                     <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
                 </div>
 
-                {/* <!-- The slideshow/carousel --> */}
+                {/*  The slideshow/carousel  */}
+                
                 <div className="carousel-inner">
+
+                    {/* First Image */}
                     <div className="carousel-item active">
                         <Image src="/images/bg1.jpg " alt="Los Angeles" width={500} height={500} className="d-block w-100 " />
                     </div>
-                    <div className="carousel-item">
-                        <div className=" flex  justify-content-center align-items-center position-relative">
-                            <Image src="/images/bg2.jpg " alt="Los Angeles" width={500} height={500} className="d-block w- inset-0 bg-black bg-opacity-60 " />
 
-                            <div className="carousel-caption text-start position-absolute flex  justify-content-center align-items-center position-absolute top-32 ">
-                                <h1>Book Now</h1>
+                    {/*  Second Image */}
+                    <div className="carousel-item">
+                        <div className="relative">
+                            <Image src="/images/bg2.jpg " alt="Los Angeles" width={500} height={500} className="d-block w-100"/>
+
+                            <div className="absolute inset-0 bg-black/50 "></div>
+                            <div className="absolute inset-0 flex justify-center items-center">
+                                <Link href="/bookingPage"  className={`text-4xl font-bold text-white italic ${Font.className}` }> Book Now</Link>
                             </div>
                         </div>
                     </div>
+
+                    {/* Third Image */}
                     <div className="carousel-item">
-                        <Image src="/images/bg3.jpg" alt="New York" width={500} height={500} className="d-block w-100" />
+                        <div className="relative">
+                            <Image src="/images/bg3.jpg " alt="Los Angeles" width={500} height={500} className="d-block w-100"/>
+
+                            <div className="absolute inset-0 bg-black/50 "></div>
+                            <div className="absolute inset-0 flex justify-center items-center">
+                                <Link href="/bookingPage"  className={`text-4xl font-bold text-white italic ${Font.className}` }>Book Now</Link>
+                            </div>
+                        </div>
                     </div>
+
+                    {/* Four Image */}
                     <div className="carousel-item">
-                        <Image src="/images/bg4.jpg" alt="New York" width={500} height={500} className="d-block w-100" />
+                         <div className="relative">
+                            <Image src="/images/bg4.jpg " alt="Los Angeles" width={500} height={500} className="d-block w-100"/>
+
+                            <div className="absolute inset-0 bg-black/50 "></div>
+                            <div className="absolute inset-0 flex justify-center items-center">
+                                <Link href="/bookingPage"  className={`text-4xl font-bold text-white italic ${Font.className}` }>Book Now</Link>
+                            </div>
+                        </div>
                     </div>
+
+                    {/* Fifth Image */}
                     <div className="carousel-item">
-                        <Image src="/images/bg5.jpg" alt="New York" width={500} height={500} className="d-block w-100" />
+                        <div className="relative">
+                            <Image src="/images/bg5.jpg " alt="Los Angeles" width={500} height={500} className="d-block w-100"/>
+
+                           <div className="absolute inset-0 bg-black/50 "></div>
+                            <div className="absolute inset-0 flex justify-center items-center">
+                                <Link href="/bookingPage"  className={`text-4xl font-bold text-white italic ${Font.className}` }>Book Now</Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

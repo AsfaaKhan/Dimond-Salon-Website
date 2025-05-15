@@ -9,9 +9,11 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		transform: ['hover', 'group-hover'],
   		colors: {
   			iconColor: '#854d0e',
   			hoverColor: '#eab308',
+  			yellowTextColor: '#eab308',
   			textColor: '#854d0e',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -71,6 +73,5 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
 };
 export default config;
