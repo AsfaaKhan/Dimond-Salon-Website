@@ -63,13 +63,13 @@ export default function Contact() {
           {/* Right Side: Contact Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block font-medium text-textColor">Name</label>
+              <label className="block font-medium text-textColor ">Name</label>
               <input
                 type="text"
                 name="name"
                 value={form.name}
                 required
-                className="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-textColor"
+                className="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 text-black focus:ring-textColor"
               />
             </div>
             <div>
@@ -79,7 +79,7 @@ export default function Contact() {
                 name="email"
                 value={form.email}
                 required
-                className="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-textColor"
+                className="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 text-black focus:ring-textColor"
               />
             </div>
             <div>
@@ -89,7 +89,7 @@ export default function Contact() {
                 value={form.message}
                 rows={4}
                 required
-                className="w-full border px-4 py-2 rounded focus:outline-none  focus:ring-2 focus:ring-textColor"
+                className="w-full border px-4 py-2 rounded focus:outline-none text-black  focus:ring-2 focus:ring-textColor"
               />
             </div>
             <button
