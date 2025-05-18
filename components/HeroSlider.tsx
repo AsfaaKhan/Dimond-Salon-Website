@@ -1,3 +1,4 @@
+"use client"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import * as React from "react"
 import Image from "next/image";
